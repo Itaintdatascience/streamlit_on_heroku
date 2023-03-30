@@ -1,6 +1,6 @@
 streamlit==1.7.0
 altair==4.2.0
-gsheetsdb==0.1.13.1
+gsheetsdb==0.1.1.1
 pandas==1.2.5
 plotly==5.7.0
 pycosat==0.6.3
