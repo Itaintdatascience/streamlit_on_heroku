@@ -1,6 +1,7 @@
 from vega_datasets import data
 import streamlit as st
 import altair as alt
+import pandas as pd
 
 def main():
     df = load_data()
@@ -18,7 +19,8 @@ def main():
 
 @st.cache
 def load_data():
-    df = data.cars()
+    # df = data.cars()
+    df = pd.read_csv("./ts_data_prod - Sheet1.csv")
     return df
 
 def visualize_data(df, x_axis, y_axis):
